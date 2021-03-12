@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.UserDeatailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        android:id="@+id/ivLogo"
+        />
+    <TextView
+        android:layout_below="@id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Total Family Member"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:id="@+id/tvFamilyMemberTitle"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:padding="5dp"
+        android:text="5"
+        android:layout_below="@id/ivLogo"
+        android:id="@+id/tvFamilyMember"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="Family Number"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/tvFamilyMemberTitle"
+        android:id="@+id/tvFamilyNumTitle"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:padding="5dp"
+        android:layout_below="@id/tvFamilyMemberTitle"
+        android:text="tr3456"
+        android:id="@+id/tvFamilyNum"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:text="family Member Name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/tvFamilyNum"
+        android:id="@+id/tvFamilyNameTitle"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/tvFamilyNameTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvUser"
+        />
+    <ImageView
+        android:layout_below="@id/rvUser"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/backgroundbottom"
+        android:scaleType="fitXY"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCheckinUser"
+            android:layout_below="@id/rvUser"
+            android:layout_centerHorizontal="true"
+            android:text="check in"
+            />
+    </RelativeLayout>
+</ScrollView>
